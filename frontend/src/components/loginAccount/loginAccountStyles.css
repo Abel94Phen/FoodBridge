@@ -11,14 +11,13 @@ body {
   background: linear-gradient(0, #00FF66, #00FF66);
   height: 100vh;
   position: relative;
-  font-family: 'Syne', sans-serif; /* Use Syne font */
-  overflow: hidden; /* Prevent scrolling */
+  font-family: 'Syne', sans-serif;
+  overflow: hidden;
 }
 
-/* Create Account Page specific styles */
 .create-account-page-container {
   display: flex;
-  height: 100vh; /* Adjusted to fill the viewport height */
+  height: 100vh;
 }
 
 .left-panel {
@@ -33,7 +32,7 @@ body {
 
 .left-panel img {
   max-width: 100%;
-  max-height: 200px; /* Adjusted maximum height */
+  max-height: 200px;
   height: auto;
 }
 
@@ -49,7 +48,7 @@ body {
   background-color: white;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 40px;  
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,18 +57,18 @@ body {
 
 .right-panel h1 {
   margin-bottom: 20px;
-  text-align: center; /* Center align the heading */
+  text-align: center;
 }
 
 .right-panel form {
-  width: 100%; /* Adjusted width to full width */
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right-panel .input-container {
-  width: 80%; /* Adjusted width */
+  width: 80%;
   margin-bottom: 20px;
   position: relative;
 }
@@ -95,31 +94,31 @@ body {
 
 .right-panel .password-container {
   display: flex;
-  justify-content: space-between; /* Space between password fields */
-  width: 100%; /* Ensure full width */
+  justify-content: space-between;
+  width: 100%;
 }
 
 .right-panel .password-container .input-half {
-  width: calc(50% - 5px); /* Adjusted width with spacing */
+  width: calc(50% - 5px);
 }
 
 .right-panel .signup-button {
-  background-color: #00FF66; /* Updated color */
+  background-color: #00FF66;
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px; /* Adjusted top margin */
-  font-family: 'Syne', sans-serif; /* Ensure buttons use Syne font */
-  align-self: center; /* Center align the button */
+  margin-top: 10px;
+  font-family: 'Syne', sans-serif;
+  align-self: center;
 }
 
 .right-panel .login-text {
-  margin-top: 20px; /* Adjusted margin top */
+  margin-top: 20px;
   font-size: 14px;
-  text-align: center; /* Center align login text */
+  text-align: center;
 }
 
 .right-panel .login-text a {
@@ -132,14 +131,21 @@ body {
 }
 
 .google-button {
-  background-color: #04BA00; /* Match the previous 'sign up' button color */
+  background-color: #04BA00;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 15px 30px;
+  font-size: 18px; 
   cursor: pointer;
-  border-radius: 5px;
-  margin-top: 10px;
+  border-radius: 30px;
+  margin-top: 20px;
   font-family: 'Syne', sans-serif;
   align-self: center;
+}
+
+.line-break {
+  width: 50%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px 0;
 }

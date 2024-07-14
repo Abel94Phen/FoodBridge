@@ -1,5 +1,3 @@
-// CreateAccountPage.jsx
-
 import React from 'react';
 import './createAccountStyles.css'; // Import the CSS file
 
