@@ -7,11 +7,11 @@ const inventorySchema = new Schema({
         type: String,
         required: true
     },
-    quantity: {
-        type: Number,
+    food_category: {
+        type: String,
         required: true
     },
-    price: {
+    quantity: {
         type: Number,
         required: true
     }

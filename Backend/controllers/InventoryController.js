@@ -58,10 +58,24 @@ const deleteInventory = async (req, res) => {
 
 //create inventory
 const createInventory = async (req, res) => {
-    const {name, quantity, price} = req.body
+    const {name, food_category, quantity} = req.body
+    let emptyfields = []
+
+    if (!name){
+        emptyfields.push('name')
+    }
+    if (!food_category){
+        emptyfields.push('food_category')
+    }
+    if (!quantity){
+        emptyfields.push('quantity')
+    }
+    if (emptyfields.length > 0){
+        return res.status(400).json({message: `Please fill in the following fields: ${emptyfields.join(', ')}`})
+    } 
 
     try{
-        const inventory = await Inventory.create({name, quantity, price})
+        const inventory = await Inventory.create({name, category, quantity})
         res.status(200).json(inventory)
     }catch (error){
         res.status(400).json({error: error.message})
