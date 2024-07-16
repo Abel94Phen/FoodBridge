@@ -29,6 +29,10 @@
   .hero-text h1 {
     font-size: 2.5em;
   }
+
+  .hero-text p {
+    color: whitesmoke;
+  }
   
   .cta-button {
     background-color: #00FF66;
