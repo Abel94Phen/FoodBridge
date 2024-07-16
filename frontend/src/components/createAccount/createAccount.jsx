@@ -45,7 +45,7 @@ function CreateAccountPage() {
           <button className="signup-button">SIGN UP</button>
         </form>
         <div className="login-text">
-          Already have an account? <a href="#">Log In</a>
+          Already have an account? <a href="../loginAccount/LoginAccount.jsx">Log In</a>
         </div>
         <button className="google-button">Continue with Google</button>
       </div>
