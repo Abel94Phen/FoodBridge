@@ -26,7 +26,6 @@ const Inventory = () => {
 
   return (
     <div className="inventory-container">
-      <h2>Inventory Page</h2>
       <div className="inventory-controls">
         <input 
           type="text" 

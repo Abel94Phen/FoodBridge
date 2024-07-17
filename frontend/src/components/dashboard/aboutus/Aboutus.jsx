@@ -4,7 +4,6 @@ import './Aboutus.css';
 const Aboutus = () => {
   return (
     <div className="about-us-container">
-      <h2>About Us</h2>
       <p className="intro">Welcome to FoodBridge! We are dedicated to reducing hunger and food waste in Ethiopia by connecting businesses with excess food to organizations that help those in need.</p>
       <div className="section mission">
         <div className="icon">&#x1F4E6;</div>

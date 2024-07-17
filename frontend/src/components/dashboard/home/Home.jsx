@@ -3,8 +3,29 @@ import './Home.css'; // Import CSS for Home component
 import HeroImage from '../../assets/FoodCircle.jpg'; // Assuming you have an image in your assets folder
 
 const Home = () => {
+  // Mock data for paid meals and organizations reached
+  const paidMeals = 94; // Example number of paid meals
+  const organizationsReached = 60; // Example number of organizations reached
+
   return (
     <div className="home-container">
+      {/* Display the number of paid meals */}
+      <div className="meals-paid">
+        <div className="paid-tile">
+          <h3>{paidMeals}</h3>
+          <p>Paid Meals Currently</p>
+        </div>
+      </div>
+
+      {/* Display the number of organizations reached */}
+      <div className="organizations-reached">
+        <div className="organizations-tile">
+          <h3>{organizationsReached}</h3>
+          <p>Organizations Reached</p>
+        </div>
+      </div>
+
+      {/* Hero section with the main image and text */}
       <div className="hero-section">
         <img src={HeroImage} alt="FoodBridge Hero" className="hero-image" />
         <div className="hero-text">

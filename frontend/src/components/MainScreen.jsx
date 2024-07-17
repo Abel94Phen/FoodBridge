@@ -58,6 +58,9 @@ function Main() {
         </div>
       </div>
       <div className="right-panel">
+        <div className="right-panel-header">
+          <h1>{selectedMenu}</h1>
+        </div>
         <div className="right-panel-content">
           <App selectedMenu={selectedMenu} />
         </div>
